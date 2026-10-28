@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent van Gogh | Arte, Vida & Cores</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Efeitos de Luz de Fundo (Aura de Van Gogh) -->
+  <div class="ambient-glow glow-blue"></div>
+  <div class="ambient-glow glow-yellow"></div>
+
+  <!-- Cabeçalho Principal (Hero) -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>1853 – 1890 • Gênio do Pós-Impressionismo</span>
+      </div>
+      <h1 class="hero-title">Vincent van Gogh</h1>
+      <p class="hero-quote">“Eu não sei de nada com certeza, mas a visão das estrelas sempre me faz sonhar.”</p>
+      
+      <!-- Amostra da Paleta de Cores de Van Gogh -->
+      <div class="palette-bar">
+        <span class="palette-chip color-yellow" title="Amarelo Cromo / Girassol"></span>
+        <span class="palette-chip color-amber" title="Ocre Dourado"></span>
+        <span class="palette-chip color-blue-dark" title="Azul Noite Profunda"></span>
+        <span class="palette-chip color-blue-light" title="Azul Cobalto Celestial"></span>
+        <span class="palette-chip color-green" title="Verde Cipreste"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-container">
+    
+    <!-- Wrapper do Sistema de Abas -->
+    <div class="tabs-container">
+      
+      <!-- Inputs de Controle Invisíveis (Radio Buttons) -->
+      <input type="radio" name="main-nav" id="tab-bio" class="tab-radio" checked>
+      <input type="radio" name="main-nav" id="tab-obras" class="tab-radio">
+      <input type="radio" name="main-nav" id="tab-curiosidades" class="tab-radio">
+      <input type="radio" name="main-nav" id="tab-jogos" class="tab-radio">
+
+      <!-- Barra de Navegação das 4 Abas -->
+      <nav class="tabs-nav" aria-label="Navegação das Abas">
+        <label for="tab-bio" class="tab-btn" id="label-bio">
+          <span class="tab-icon">📜</span>
+          <span class="tab-label-text">1. Biografia</span>
+        </label>
+        
+        <label for="tab-obras" class="tab-btn" id="label-obras">
+          <span class="tab-icon">🎨</span>
+          <span class="tab-label-text">2. Obras</span>
+        </label>
+        
+        <label for="tab-curiosidades" class="tab-btn" id="label-curiosidades">
+          <span class="tab-icon">✨</span>
+          <span class="tab-label-text">3. Curiosidades</span>
+        </label>
+        
+        <label for="tab-jogos" class="tab-btn" id="label-jogos">
+          <span class="tab-icon">🎮</span>
+          <span class="tab-label-text">4. Joguinho Interativo</span>
+          <span class="new-pill">Diversão</span>
+        </label>
+      </nav>
+
+      <!-- Painéis de Conteúdo -->
+      <div class="tabs-panels">
+
+        <!-- ==============================================================
+             ABA 1: BIOGRAFIA
+             ============================================================== -->
+        <section class="tab-panel" id="panel-bio">
+          <div class="section-title-wrap">
+            <span class="section-subtitle">Trajetória e Sensibilidade</span>
+            <h2 class="section-title">A Alma Intensa de Vincent</h2>
+            <div class="title-divider"></div>
+          </div>
+
+          <div class="bio-hero-card">
+            <div class="bio-portrait-box">
+              <img src="imagens/images (5).jfif" alt="Autorretrato de Vincent van Gogh (1889)" loading="lazy">
+              <div class="portrait-tag">Autorretrato (1889) • Museu de Orsay</div>
+            </div>
+            
+            <div class="bio-lead-text">
+              <h3>O Homem por Trás das Telas</h3>
+              <p>Vincent Willem van Gogh nasceu em 30 de março de 1853 em Groot-Zundert, nos Países Baixos. Filho de um pastor calvinista, antes de se dedicar integralmente à pintura aos 27 anos, ele trabalhou como negociante de arte, professor e missionário religioso entre mineiros de carvão na Bélgica.</p>
+              <p>Em apenas uma década de atividade artística (1880 a 1890), Van Gogh produziu freneticamente mais de <strong>2.100 obras de arte</strong>, incluindo 860 telas a óleo e mais de 1.300 aquarelas e desenhos. Sua vida foi marcada pela solidão, pela busca fervorosa do divino e por episódios de sofrimento psíquico, mas acima de tudo por uma sede incomparável de capturar o brilho da vida.</p>
+              <div class="bio-stats">
+                <div class="stat-item">
+                  <span class="stat-number">2.100+</span>
+                  <span class="stat-label">Obras Criadas</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">650+</span>
+                  <span class="stat-label">Cartas a Theo</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">37</span>
+                  <span class="stat-label">Anos de Vida</span>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <!-- Espaço Reservado para o Vídeo -->
+          <div class="bio-video-card">
+            <div class="video-header">
+              <span class="video-badge">🎬 Documentário & Biografia</span>
+              <h3 class="video-title">Vincent van Gogh: Vida e Arte em Movimento</h3>
+              <p class="video-subtitle">Espaço reservado para o vídeo ou documentário sobre a trajetória do artista.</p>
+            </div>
+            
+            <div class="video-wrapper">
+              <!-- 
+                DICA: Quando tiver o seu vídeo pronto, basta substituir a div 'video-placeholder' abaixo por:
+                
+                Opção A (YouTube):
+                <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO" title="Vídeo de Van Gogh" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                Opção B (Arquivo MP4 local):
+                <video controls poster="imagens/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg">
+                  <source src="seu-video.mp4" type="video/mp4">
+                  Seu navegador não suporta a tag de vídeo.
+                </video>
+              -->
+              <div class="video-placeholder">
+                <div class="video-play-btn" title="Vídeo">
+                  <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <h4 class="placeholder-title">Espaço Reservado para o Vídeo</h4>
+                <p class="placeholder-text">Cole aqui o link/iframe do YouTube ou seu arquivo de vídeo MP4</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Linha do Tempo das Grandes Fases -->
+          <div class="timeline-container">
+            <h3 class="timeline-heading">As Fases da Criação</h3>
+            
+            <div class="timeline-track">
+              
+              <div class="timeline-card">
+                <div class="timeline-marker marker-earth"></div>
+                <div class="timeline-year">1880 – 1885 • Holanda</div>
+                <h4>O Realismo Sombrio e a Terra</h4>
+                <p>Fase inicial em Nuenen. Cores escuras, terrosas e soturnas que retratavam a dura lida dos camponeses pobres. O ponto culminante desta época foi a famosa tela <em>"Os Comedores de Batata"</em> (1885).</p>
+              </div>
+
+              <div class="timeline-card">
+                <div class="timeline-marker marker-yellow"></div>
+                <div class="timeline-year">1886 – 1888 • Paris</div>
+                <h4>O Choque de Luz e os Impressionistas</h4>
+                <p>Morando com seu irmão Theo em Montmartre, Vincent conheceu Monet, Gauguin, Pissarro e Toulouse-Lautrec. Sua paleta se iluminou de repente e ele começou a experimentar as pinceladas rápidas e as xilogravuras japonesas.</p>
+              </div>
+
+              <div class="timeline-card">
+                <div class="timeline-marker marker-gold"></div>
+                <div class="timeline-year">1888 – 1889 • Arles</div>
+                <h4>A Casa Amarela e o Sol do Sul</h4>
+                <p>Em busca de calor e luz cintilante, viajou para o sul da França. Alugou a mítica Casa Amarela, onde sonhou em fundar um refúgio coletivo de artistas. Produziu a emblemática série dos <em>Girassóis</em> e o <em>Quarto em Arles</em>.</p>
+              </div>
+
+              <div class="timeline-card">
+                <div class="timeline-marker marker-blue"></div>
+                <div class="timeline-year">1889 – 1890 • Saint-Rémy & Auvers</div>
+                <h4>Espirais Celestes e Eternidade</h4>
+                <p>Internado voluntariamente no asilo psiquiátrico de Saint-Rémy, canalizou toda sua dor em obras de genialidade cósmica, como <em>A Noite Estrelada</em>. Em Auvers-sur-Oise, completou dezenas de telas antes de seu trágico adeus em 29 de julho de 1890.</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================================
+             ABA 2: OBRAS
+             ============================================================== -->
+        <section class="tab-panel" id="panel-obras">
+          <div class="section-title-wrap">
+            <span class="section-subtitle">Pinceladas Inesquecíveis</span>
+            <h2 class="section-title">Galeria de Obras-Primas</h2>
+            <div class="title-divider"></div>
+            <p class="section-desc">Uma seleção das telas mais revolucionárias e arrebatadoras da história da arte.</p>
+          </div>
+
+          <div class="gallery-mosaic">
+            
+            <!-- Obra 1 -->
+            <article class="painting-card featured-artwork">
+              <div class="painting-img-wrap">
+                <img src="imagens/images (1).jfif" alt="A Noite Estrelada" loading="lazy">
+                <span class="painting-badge">1889 • Saint-Rémy</span>
+              </div>
+              <div class="painting-details">
+                <div class="painting-header">
+                  <h3>A Noite Estrelada</h3>
+                  <span class="museum-tag">MoMA • Nova York</span>
+                </div>
+                <p>Pintada da janela gradeada de seu quarto no asilo de Saint-Rémy pouco antes do nascer do sol. As espirais turbulentas no céu, a lua flamejante e o cipreste escuro criam uma ponte mística entre a terra e a vastidão cósmica.</p>
+                <div class="painting-palette">
+                  <span class="mini-chip" style="background:#14234b" title="Azul Ultramar"></span>
+                  <span class="mini-chip" style="background:#2c5a9e" title="Azul Cobalto"></span>
+                  <span class="mini-chip" style="background:#fcd34d" title="Amarelo Estelar"></span>
+                  <span class="mini-chip" style="background:#1b382b" title="Verde Cipreste"></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Obra 2 -->
+            <article class="painting-card">
+              <div class="painting-img-wrap">
+                <img src="imagens/images.jfif" alt="Os Girassóis" loading="lazy">
+                <span class="painting-badge">1888 • Arles</span>
+              </div>
+              <div class="painting-details">
+                <div class="painting-header">
+                  <h3>Os Girassóis</h3>
+                  <span class="museum-tag">National Gallery • Londres</span>
+                </div>
+                <p>Uma sinfonia de tons dourados e amarelos. Vincent pintou esta célebre série para dar as boas-vindas ao amigo Paul Gauguin na Casa Amarela, transformando flores comuns em faróis de pura vitalidade e luz.</p>
+                <div class="painting-palette">
+                  <span class="mini-chip" style="background:#f59e0b"></span>
+                  <span class="mini-chip" style="background:#fbbf24"></span>
+                  <span class="mini-chip" style="background:#78350f"></span>
+                  <span class="mini-chip" style="background:#d97706"></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Obra 3 -->
+            <article class="painting-card">
+              <div class="painting-img-wrap">
+                <img src="imagens/images (2).jfif" alt="O Quarto em Arles" loading="lazy">
+                <span class="painting-badge">1888 • Arles</span>
+              </div>
+              <div class="painting-details">
+                <div class="painting-header">
+                  <h3>O Quarto em Arles</h3>
+                  <span class="museum-tag">Van Gogh Museum • Amsterdã</span>
+                </div>
+                <p>Vincent pretendia que as cores fortes sugerissem "repouso absoluto". As paredes de lilás claro, a madeira amarela da cama e a perspectiva ligeiramente distorcida criam uma sensação calorosa de intimidade pessoal.</p>
+                <div class="painting-palette">
+                  <span class="mini-chip" style="background:#93c5fd"></span>
+                  <span class="mini-chip" style="background:#fde047"></span>
+                  <span class="mini-chip" style="background:#dc2626"></span>
+                  <span class="mini-chip" style="background:#4ade80"></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Obra 4 -->
+            <article class="painting-card">
+              <div class="painting-img-wrap">
+                <img src="imagens/images (3).jfif" alt="Terraço do Café à Noite" loading="lazy">
+                <span class="painting-badge">1888 • Arles</span>
+              </div>
+              <div class="painting-details">
+                <div class="painting-header">
+                  <h3>Terraço do Café à Noite</h3>
+                  <span class="museum-tag">Kröller-Müller • Otterlo</span>
+                </div>
+                <p>A primeira tela em que Van Gogh retratou um céu noturno salpicado de estrelas. Notavelmente, ele pintou a cena sem usar tinta preta para a noite, confiando no choque sublime entre azuis, violetas e a luz incandescente a gás.</p>
+                <div class="painting-palette">
+                  <span class="mini-chip" style="background:#1e3a8a"></span>
+                  <span class="mini-chip" style="background:#eab308"></span>
+                  <span class="mini-chip" style="background:#f97316"></span>
+                  <span class="mini-chip" style="background:#3b82f6"></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Obra 5 -->
+            <article class="painting-card">
+              <div class="painting-img-wrap">
+                <img src="imagens/images (4).jfif" alt="Amendoeira em Flor" loading="lazy">
+                <span class="painting-badge">1890 • Saint-Rémy</span>
+              </div>
+              <div class="painting-details">
+                <div class="painting-header">
+                  <h3>Amendoeira em Flor</h3>
+                  <span class="museum-tag">Van Gogh Museum • Amsterdã</span>
+                </div>
+                <p>Criada para celebrar o nascimento de seu sobrinho e afilhado Vincent Willem, filho de Theo. Inspirada na elegância das estampas japonesas, os galhos floridos contra o céu azul-turquesa simbolizam esperança e renascimento.</p>
+                <div class="painting-palette">
+                  <span class="mini-chip" style="background:#0284c7"></span>
+                  <span class="mini-chip" style="background:#38bdf8"></span>
+                  <span class="mini-chip" style="background:#f8fafc"></span>
+                  <span class="mini-chip" style="background:#78716c"></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Obra 6 -->
+            <article class="painting-card">
+              <div class="painting-img-wrap">
+                <img src="imagens/Vincent_van_Gogh_(1853-1890)_-_Wheat_Field_with_Crows_(1890).jpg" alt="Campo de Trigo com Corvos" loading="lazy">
+                <span class="painting-badge">1890 • Auvers</span>
+              </div>
+              <div class="painting-details">
+                <div class="painting-header">
+                  <h3>Campo de Trigo com Corvos</h3>
+                  <span class="museum-tag">Van Gogh Museum • Amsterdã</span>
+                </div>
+                <p>Uma de suas últimas e mais carregadas pinturas. O céu em tempestade azul-marinho profundo sobre os trigais dourados e o voo errante dos corvos traduzem uma comovente solidão e a força indomável da natureza.</p>
+                <div class="painting-palette">
+                  <span class="mini-chip" style="background:#0f172a"></span>
+                  <span class="mini-chip" style="background:#1e3a8a"></span>
+                  <span class="mini-chip" style="background:#ca8a04"></span>
+                  <span class="mini-chip" style="background:#eab308"></span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ==============================================================
+             ABA 3: CURIOSIDADES
+             ============================================================== -->
+        <section class="tab-panel" id="panel-curiosidades">
+          <div class="section-title-wrap">
+            <span class="section-subtitle">Fatos Fascinantes & Histórias</span>
+            <h2 class="section-title">O Mundo Secreto de Vincent</h2>
+            <div class="title-divider"></div>
+          </div>
+
+          <div class="curiosities-grid">
+            
+            <div class="curiosity-box">
+              <div class="curiosity-icon">💌</div>
+              <h3>As Mais de 650 Cartas a Theo</h3>
+              <p>Vincent mantinha correspondência quase diária com seu irmão Theo. Nessas cartas recheadas de esboços, ele discutia literatura, filosofia, angústias e sua fé na arte. Foram essas cartas, publicadas pela cunhada Jo van Gogh-Bonger, que revelaram a genialidade intelectual do artista ao mundo.</p>
+            </div>
+
+            <div class="curiosity-box">
+              <div class="curiosity-icon">📙</div>
+              <h3>O Mito da Venda Única</h3>
+              <p>Diz a lenda que ele só vendeu uma pintura em vida (<em>"A Vinha Encarnada"</em>, adquirida pela pintora Anna Boch por 400 francos em Bruxelas). Embora sua carreira comercial tenha sido modesta, registros mostram que negociou e trocou diversas obras e desenhos com marchands e amigos.</p>
+            </div>
+
+            <div class="curiosity-box">
+              <div class="curiosity-icon">👂</div>
+              <h3>O Famoso Incidente da Orelha</h3>
+              <p>Em 23 de dezembro de 1888, em Arles, após uma discussão com Paul Gauguin, Vincent cortou parte de sua orelha esquerda com uma navalha. Em seguida, embrulhou-a em papel e entregou-a na porta de um bordel local antes de ser hospitalizado.</p>
+            </div>
+
+            <div class="curiosity-box">
+              <div class="curiosity-icon">🥢</div>
+              <h3>Fascinado pelo Japão (Japonismo)</h3>
+              <p>Van Gogh era apaixonado por gravuras japonesas (<em>Ukiyo-e</em>). Ele colecionou centenas delas e chegou a copiar obras de mestres como Hiroshige. A ausência de sombras rígidas e as cores planas japonesas influenciaram profundamente seu traço revolucionário.</p>
+            </div>
+
+            <div class="curiosity-box">
+              <div class="curiosity-icon">🖌️</div>
+              <h3>A Técnica do Impasto</h3>
+              <p>Vincent aplicava a tinta a óleo diretamente do tubo sobre a tela, sem diluir, criando grossas camadas tridimensionais (<em>impasto</em>). Suas pinceladas tinham textura física palpável, permitindo que a luz do ambiente dançasse sobre a superfície da pintura.</p>
+            </div>
+
+            <div class="curiosity-box">
+              <div class="curiosity-icon">🕯️</div>
+              <h3>Pintando à Noite com Velas</h3>
+              <p>Para conseguir pintar ao ar livre à noite sem eletricidade — como fez em <em>A Noite Estrelada sobre o Ródano</em> — Van Gogh costumava prender velas acesas na aba de seu chapéu de palha e ao redor de seu cavalete para enxergar as tintas na escuridão.</p>
+            </div>
+
+          </div>
+
+          <!-- Destaque Especial: A Teoria das Cores de Vincent -->
+          <div class="color-theory-banner">
+            <div class="color-theory-text">
+              <h3>A Simbologia das Cores para Van Gogh</h3>
+              <p>Para Vincent, a cor não era mera cópia da realidade visual, mas um idioma para a emoção pura:</p>
+              <ul class="color-meanings">
+                <li><strong class="text-gold">Amarelo:</strong> Luz celestial, amizade calorosa, renascimento e a glória do sol.</li>
+                <li><strong class="text-blue">Azul & Violeta:</strong> A vastidão do infinito cósmico, reflexão e consolo espiritual.</li>
+                <li><strong class="text-green">Vermelho & Verde:</strong> As terríveis paixões humanas e o conflito dos sentidos.</li>
+              </ul>
+            </div>
+            <div class="quote-framed">
+              <p>“Em vez de tentar reproduzir exatamente o que vejo diante dos olhos, uso a cor de maneira mais arbitrária para me expressar com vigor.”</p>
+              <span>— Carta 520 a Theo van Gogh</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================================
+             ABA 4: JOGUINHO INTERATIVO 
+             ============================================================== -->
+        <section class="tab-panel" id="panel-jogos">
+          <div class="section-title-wrap">
+            <span class="section-subtitle">Diversão & Conhecimento </span>
+            <h2 class="section-title">Espaço Interativo Van Gogh</h2>
+            <div class="title-divider"></div>
+            <p class="section-desc">Teste seus conhecimentos e explore os detalhes das pinturas com desafios divertidos!<p>
+          </div>
+
+          <!-- JOGO 1: QUIZ COM PLACAR -->
+          <div class="game-card-wrapper quiz-engine">
+            <div class="game-header">
+              <div class="game-badge">Desafio 1</div>
+              <h3>🎨 Quiz do Mestre das Cores</h3>
+              <p>Responda às 4 perguntas abaixo. A cada acerto, seu placar aumentará instantaneamente em tempo real através de <strong>CSS Counters</strong>!</p>
+              
+              <!-- Placar Dinâmico -->
+              <div class="scoreboard-container">
+                <span class="scoreboard-label">Sua Pontuação:</span>
+                <span class="scoreboard-display">
+                  <span class="score-number"></span> / 4 Acertos
+                </span>
+              </div>
+            </div>
+
+            <div class="quiz-questions-list">
+
+              <!-- Pergunta 1 -->
+              <div class="quiz-question-box">
+                <div class="q-header">
+                  <span class="q-index">1</span>
+                  <h4>Onde Vincent van Gogh estava internado quando pintou a célebre tela "A Noite Estrelada"?</h4>
+                </div>
+                <div class="q-options">
+                  <input type="radio" name="q1" id="q1-opt1" class="q-radio q-wrong">
+                  <label for="q1-opt1" class="q-label">A) Em um sótão em Montmartre, Paris</label>
+
+                  <input type="radio" name="q1" id="q1-opt2" class="q-radio q-correct">
+                  <label for="q1-opt2" class="q-label">B) No asilo psiquiátrico de Saint-Rémy-de-Provence</label>
+
+                  <input type="radio" name="q1" id="q1-opt3" class="q-radio q-wrong">
+                  <label for="q1-opt3" class="q-label">C) Na casa de seus pais na Holanda</label>
+                  
+                  <!-- Feedbacks Dinâmicos em CSS -->
+                  <div class="feedback-box feedback-ok">
+                    ✨ <strong>Correto!</strong> Ele pintou a obra através da janela gradeada de seu quarto no asilo em 1889. (+1 Ponto)
+                  </div>
+                  <div class="feedback-box feedback-err">
+                    ❌ <strong>Incorreto!</strong> A resposta certa é a alternativa <strong>B</strong> (Saint-Rémy-de-Provence).
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pergunta 2 -->
+              <div class="quiz-question-box">
+                <div class="q-header">
+                  <span class="q-index">2</span>
+                  <h4>Qual flor se tornou o maior símbolo de calor e afeto na carreira de Van Gogh?</h4>
+                </div>
+                <div class="q-options">
+                  <input type="radio" name="q2" id="q2-opt1" class="q-radio q-correct">
+                  <label for="q2-opt1" class="q-label">A) Girassóis em jarras de cerâmica</label>
+
+                  <input type="radio" name="q2" id="q2-opt2" class="q-radio q-wrong">
+                  <label for="q2-opt2" class="q-label">B) Rosas vermelhas do jardim de Arles</label>
+
+                  <input type="radio" name="q2" id="q2-opt3" class="q-radio q-wrong">
+                  <label for="q2-opt3" class="q-label">C) Tulipas negras de Amsterdã</label>
+
+                  <div class="feedback-box feedback-ok">
+                    ✨ <strong>Excelente!</strong> A série de Girassóis foi criada para acolher Gauguin na Casa Amarela. (+1 Ponto)
+                  </div>
+                  <div class="feedback-box feedback-err">
+                    ❌ <strong>Tente novamente!</strong> Os <strong>Girassóis</strong> eram sua paixão solar máxima!
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pergunta 3 -->
+              <div class="quiz-question-box">
+                <div class="q-header">
+                  <span class="q-index">3</span>
+                  <h4>Como se chama o fiel irmão mais novo com quem Vincent trocou centenas de cartas comoventes?</h4>
+                </div>
+                <div class="q-options">
+                  <input type="radio" name="q3" id="q3-opt1" class="q-radio q-wrong">
+                  <label for="q3-opt1" class="q-label">A) Paul van Gogh</label>
+
+                  <input type="radio" name="q3" id="q3-opt2" class="q-radio q-wrong">
+                  <label for="q3-opt2" class="q-label">B) Claude van Gogh</label>
+
+                  <input type="radio" name="q3" id="q3-opt3" class="q-radio q-correct">
+                  <label for="q3-opt3" class="q-label">C) Theo van Gogh</label>
+
+                  <div class="feedback-box feedback-ok">
+                    ✨ <strong>Perfeito!</strong> Theo era negociante de arte e foi o maior sustento e amigo de Vincent. (+1 Ponto)
+                  </div>
+                  <div class="feedback-box feedback-err">
+                    ❌ <strong>Não foi esse!</strong> Seu irmão protetor e melhor amigo chamava-se <strong>Theo</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pergunta 4 -->
+              <div class="quiz-question-box">
+                <div class="q-header">
+                  <span class="q-index">4</span>
+                  <h4>Qual técnica marcante Van Gogh utilizava ao aplicar tinta em camadas grossas e salientes?</h4>
+                </div>
+                <div class="q-options">
+                  <input type="radio" name="q4" id="q4-opt1" class="q-radio q-wrong">
+                  <label for="q4-opt1" class="q-label">A) Pontilhismo Aquarelado</label>
+
+                  <input type="radio" name="q4" id="q4-opt2" class="q-radio q-correct">
+                  <label for="q4-opt2" class="q-label">B) Impasto (camadas densas direto do tubo)</label>
+
+                  <input type="radio" name="q4" id="q4-opt3" class="q-radio q-wrong">
+                  <label for="q4-opt3" class="q-label">C) Pintura a Fogo</label>
+
+                  <div class="feedback-box feedback-ok">
+                    ✨ <strong>Magnífico!</strong> O <em>Impasto</em> cria relevo físico e textura única que captura a luz real. (+1 Ponto)
+                  </div>
+                  <div class="feedback-box feedback-err">
+                    ❌ <strong>Incorreto!</strong> A técnica de relevo com tinta densa chama-se <strong>Impasto</strong>.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Efeito de Finalização do Quiz -->
+            <div class="quiz-completion-banner">
+              <h4>🏆 Parabéns pelo Desafio!</h4>
+              <p>Confira seu placar no topo do cartão. Se marcou 4/4 acertos, você tem o olhar refinado de um verdadeiro mestre pós-impressionista!</p>
+            </div>
+          </div>
+
+          <!-- JOGO 2: CAÇA ÀS 4 ESTRELAS PERDIDAS NA NOITE ESTRELADA -->
+          <div class="game-card-wrapper stars-hunt-wrapper">
+            <div class="game-header">
+              <div class="game-badge">Desafio 2</div>
+              <h3>⭐ Caça às 4 Estrelas Cósmicas</h3>
+              <p>Quatro estrelas douradas especiais estão escondidas sobre o céu de Van Gogh abaixo. Clique nelas para acendê-las e descubra os segredos da tela!</p>
+              
+              <!-- Contador de Estrelas -->
+              <div class="stars-counter-badge">
+                <span>Estrelas Acendidas: </span>
+                <span class="stars-count-val"></span> / 4
+              </div>
+            </div>
+
+            <div class="sky-canvas">
+              <img src="imagens/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="A Noite Estrelada com Estrelas Escondidas" class="sky-img">
+
+              <!-- Checkbox 1 -->
+              <input type="checkbox" id="star-hunt-1" class="star-input">
+              <label for="star-hunt-1" class="star-target star-pos-1" title="Clique para iluminar esta estrela!">
+                <span class="star-flare">🌟</span>
+                <span class="star-popover">Vênus Matutina!</span>
+              </label>
+
+              <!-- Checkbox 2 -->
+              <input type="checkbox" id="star-hunt-2" class="star-input">
+              <label for="star-hunt-2" class="star-target star-pos-2" title="Clique para iluminar esta estrela!">
+                <span class="star-flare">✨</span>
+                <span class="star-popover">A Grande Espiral Celeste!</span>
+              </label>
+
+              <!-- Checkbox 3 -->
+              <input type="checkbox" id="star-hunt-3" class="star-input">
+              <label for="star-hunt-3" class="star-target star-pos-3" title="Clique para iluminar esta estrela!">
+                <span class="star-flare">💫</span>
+                <span class="star-popover">Lua Crescente de Ouro!</span>
+              </label>
+
+              <!-- Checkbox 4 -->
+              <input type="checkbox" id="star-hunt-4" class="star-input">
+              <label for="star-hunt-4" class="star-target star-pos-4" title="Clique para iluminar esta estrela!">
+                <span class="star-flare">☀️</span>
+                <span class="star-popover">A Estrela do Horizonte!</span>
+              </label>
+
+              <!-- Mensagem de Vitória Revelada ao Marcar as 4 Estrelas -->
+              <div class="sky-victory-overlay">
+                <div class="victory-content">
+                  <div class="victory-trophy">🌌✨🎨</div>
+                  <h3>Você Iluminou o Céu de Vincent!</h3>
+                  <p>Todas as 4 estrelas místicas foram acesas. A energia cósmica de Saint-Rémy resplandece em suas cores mais puras!</p>
+                  <span class="victory-badge">Medalha: Guardião das Estrelas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé Artístico -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-quote">
+        “A única maneira de expressar a admiração que tenho por certos mestres é continuar trabalhando.”
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
